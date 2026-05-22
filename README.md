@@ -1,4 +1,4 @@
-## Project repository for the Pluralsight course, GitHub Actions: The Big Picturebob
+## Project repository for the Pluralsight course, GitHub Actions: The Big Picturebobbuilder
 
 This repository contains the core web application files and configuration you'll need to follow along in the Pluralsight course, GitHub Actions: The Big Picture.
 
