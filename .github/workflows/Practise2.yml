@@ -6,7 +6,7 @@ on:
             number1:
                 description: 'First Number'
                 default: '0'
-                required: true
+                required: false
 env:
       myName: Panna
 jobs: 
