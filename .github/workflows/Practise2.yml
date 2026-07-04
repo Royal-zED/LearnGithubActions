@@ -1,4 +1,4 @@
-name: practise
+name: practise2
 
 on: workflow_dispatch
 env:
