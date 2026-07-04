@@ -1,14 +1,14 @@
 name: practise
 
 on: workflow_dispatch
-
+env:
+      myName: Panna
 jobs: 
   practise1:
 
     runs-on: ubuntu-latest
 
-    env:
-      myName: Panna
+    
 
     steps: 
       - name: Check out repository code
