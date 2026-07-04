@@ -36,4 +36,11 @@ jobs:
       - run: echo "$myName"
       - run: echo "${{vars.Project_ID}}"
       - run: echo "${{inputs.number1}}"
+  practise4:
+    runs-on: ubuntu-latest
+    steps:
+      - name: store variable
+        run: echo "VERSION=1.0.0">>$GITHUB_ENV
+      - name: Use Variable
+        run: echo $VERSION
   
