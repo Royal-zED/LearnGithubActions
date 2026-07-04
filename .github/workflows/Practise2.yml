@@ -1,6 +1,12 @@
 name: practise2
 
-on: workflow_dispatch
+on: 
+    workflow_dispatch:
+        inputs:
+            number1:
+                description: 'First Number'
+                default: '0'
+                required: true
 env:
       myName: Panna
 jobs: 
@@ -23,3 +29,10 @@ jobs:
       - run: echo "${{github.repository}}"
       - run: echo "${{github.workflow}}"
       - run: echo "${{github.triggering_actor}}"
+
+  practise3:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "$myName"
+      - run: echo "${{vars.Project_ID}}"
+  
