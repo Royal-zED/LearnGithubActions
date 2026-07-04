@@ -20,3 +20,6 @@ jobs:
     steps:
       - run: echo "$myName"
       - run: echo "${{vars.Project_ID}}"
+      - run: echo "${{github.repository}}"
+      - run: echo "${{github.workflow}}"
+      - run: echo "${{github.triggering_actor}}"
