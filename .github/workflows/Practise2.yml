@@ -1,0 +1,25 @@
+name: practise
+
+on: workflow_dispatch
+env:
+      myName: Panna
+jobs: 
+  practise1:
+
+    runs-on: ubuntu-latest
+
+    
+
+    steps: 
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - run: echo "$(cat hello_world.txt)"
+
+  practise2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "$myName"
+      - run: echo "${{vars.Project_ID}}"
+      - run: echo "${{github.repository}}"
+      - run: echo "${{github.workflow}}"
+      - run: echo "${{github.triggering_actor}}"
