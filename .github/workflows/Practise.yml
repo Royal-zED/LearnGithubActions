@@ -3,11 +3,19 @@ name: practise
 on: workflow_dispatch
 
 jobs: 
-  hello-world-job:
+  practise1:
 
     runs-on: ubuntu-latest
+
+    env:
+      myName: Panna
 
     steps: 
       - name: Check out repository code
         uses: actions/checkout@v3
       - run: echo "$(cat hello_world.txt)"
+
+  practise2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "$myName"
