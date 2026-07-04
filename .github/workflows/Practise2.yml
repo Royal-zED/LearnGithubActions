@@ -35,4 +35,5 @@ jobs:
     steps:
       - run: echo "$myName"
       - run: echo "${{vars.Project_ID}}"
+      - run: echo "${{inputs.number1}}"
   
