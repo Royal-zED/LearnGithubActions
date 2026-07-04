@@ -1,6 +1,7 @@
 name: practise
 
-on: workflow_dispatch
+on: 
+  push
 env:
       myName: Panna
 jobs: 
